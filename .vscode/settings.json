@@ -1,0 +1,9 @@
+{
+  "[handlebars]": {
+    "editor.formatOnSave": false
+  },
+  "editor.formatOnSave": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.validate.enable": true,
+  "editor.tabSize": 2
+}

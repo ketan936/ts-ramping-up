@@ -1,0 +1,30 @@
+{
+  // See http://go.microsoft.com/fwlink/?LinkId=827846
+  // for the documentation about the extensions.json format
+  "recommendations": [
+    // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+
+    "esbenp.prettier-vscode", // Prettier
+    "eg2.tslint", // TS Lint
+    "msjsdiag.debugger-for-chrome", // Debugger for Chrome
+
+    // Graphql
+    "kumar-harsh.graphql-for-vscode", // GraphQL for VSCode
+
+    // git
+    "donjayamanne.githistory", // Git History
+    "eamodio.gitlens", // Git Lens
+    "ms-vsts.team", // Visual Studio Team Services
+
+    // .md
+    "shd101wyy.markdown-preview-enhanced", // Markdown preview Enhanced
+    "bierner.markdown-mermaid", // Markdown Preview Mermaid
+
+    // NPM / package.json / settings.json
+    "eg2.vscode-npm-script", // NPM Support for VS Code
+
+    // Import Intellisense
+    "christian-kohler.npm-intellisense", // NPM Module Import Intellisense
+    "christian-kohler.path-intellisense" // Non NPM Module Import Intellisense
+  ]
+}

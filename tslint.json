@@ -1,0 +1,125 @@
+{
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["tools/**", "packages/services/services-aria-web-telemetry/**"]
+  },
+  "rules": {
+    "no-unused-variable": false,
+    "align": true,
+    "array-type": [true, "array"],
+    "arrow-parens": [true, "ban-single-arg-parens"],
+    "arrow-return-shorthand": true,
+    "await-promise": [false, "Thenable"],
+    "ban-comma-operator": false,
+    "class-name": true,
+    "forin": true,
+    "import-spacing": true,
+    "indent": [true, "spaces"],
+    "insecure-random": true,
+    "interface-name": true,
+    "interface-over-type-literal": false,
+    "label-position": true,
+    "cyclomatic-complexity": true,
+    "max-file-line-count": [true, 1000],
+    "max-func-body-length": [
+      true,
+      50,
+      {
+        "ignore-comments": true,
+        "ignore-parameters-to-function-regex": "describe|test|beforeAll|beforeEach|it"
+      }
+    ],
+    "member-access": true,
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "private-static-field",
+          "public-static-field",
+          "private-instance-field",
+          "public-instance-field",
+          "private-constructor",
+          "public-constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
+    ],
+    "no-arg": true,
+    "no-angle-bracket-type-assertion": false,
+    "no-banned-terms": true,
+    "no-code-in-index-file": true,
+    "no-console": [true, "debug", "info", "time", "timeEnd", "trace"],
+    "no-construct": true,
+    "no-debugger": true,
+    "no-duplicate-variable": true,
+    "no-empty-interface": true,
+    "no-eval": true,
+    "no-floating-promises": false,
+    "no-implicit-dependencies": [true, "dev"],
+    "no-import-side-effect": true,
+    "no-export-side-effects": false,
+    "no-window-access": true,
+    "no-inferrable-types": true,
+    "no-internal-module": true,
+    "no-invalid-template-strings": true,
+    "no-magic-numbers": true,
+    "no-namespace": true,
+    "no-new-array": true,
+    "no-non-null-assertion": true,
+    "no-object-literal-type-assertion": false,
+    "no-return-await": true,
+    "no-var-requires": false,
+    "no-shadow": false,
+    "no-shadowed-variable": false,
+    "no-string-literal": false,
+    "no-submodule-imports": false,
+    "no-this-assignment": true,
+    "no-trailing-whitespace": [true, "ignore-template-strings"],
+    "no-unnecessary-initializer": true,
+    "no-unused-expression": true,
+    "no-use-before-declare": false,
+    "no-var-keyword": true,
+    "object-literal-shorthand": true,
+    "object-literal-sort-keys": false,
+    "one-variable-per-declaration": [true, "ignore-for-loop"],
+    "only-arrow-functions": [
+      true,
+      "allow-declarations",
+      "allow-named-functions"
+    ],
+    "ordered-imports": false,
+    "prefer-const": true,
+    "prefer-for-of": true,
+    "prefer-object-spread": true,
+    "prefer-switch": [
+      true,
+      {
+        "min-cases": 3
+      }
+    ],
+    "prefer-template": true,
+    "promise-function-async": false,
+    "promise-must-complete": true,
+    "radix": true,
+    "trailing-comma": true,
+    "triple-equals": [true, "allow-null-check", "allow-undefined-check"],
+    "underscore-consistent-invocation": [
+      true,
+      {
+        "style": "static"
+      }
+    ],
+    "unified-signatures": true,
+    "variable-name": false
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-microsoft-contrib",
+    "node_modules/tslint/lib/rules",
+    "tools/custom_rules/tslint/noCodeInIndexFileRule",
+    "tools/custom_rules/tslint/noExportSideEffectsRule",
+    "tools/custom_rules/tslint/noNewArrayRule",
+    "tools/custom_rules/tslint/noWindowAccessRule"
+  ]
+}
