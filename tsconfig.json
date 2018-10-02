@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": false,
+    "noImplicitAny": false,
+    "target": "es5",
+    "module": "commonjs",
+    "inlineSourceMap": true,
+    "moduleResolution": "node",
+    "noResolve": false,
+    "removeComments": false,
+    "experimentalDecorators": true,
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "noImplicitReturns": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    // strictPropertyInitialization and strictNullChecks are dependent on each other, we should get these turned
+    // back on and fix the slew of typing errors for them
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false,
+    // keyofStringsOnly needed due to external packages @types/react-router-dom and @types/recompose
+    // perhaps in future we can flip this back to false
+    "keyofStringsOnly": true,
+    "importHelpers": true,
+    "noEmitHelpers": true,
+    "jsx": "react",
+    "lib": ["es6", "dom", "esnext.asynciterable", "dom.iterable"],
+    "typeRoots": ["types", "node_modules/@types"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
