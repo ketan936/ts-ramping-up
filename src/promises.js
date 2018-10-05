@@ -13,11 +13,11 @@ function getData() {
 }
 
 function call() {
-  const response = getData().then(response => {
+  const prmiseresponse = getData().then(response => {
     console.log("call", response);
   });
 
-  console.log("call outer", response);
+  console.log("call outer", prmiseresponse);
 }
 
 call();
